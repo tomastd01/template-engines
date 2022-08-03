@@ -1,0 +1,15 @@
+doctype html 
+html 
+    head 
+    body 
+        h1 Vista de Productos
+        table
+            tr 
+                th Producto 
+                th Precio
+                th Foto
+            each val in products 
+                tr
+                    th=val.title
+                    th=val.price
+                    th=val.thumbnail
