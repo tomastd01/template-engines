@@ -1,6 +1,7 @@
 doctype html 
-html 
-    head 
+html(lang="es") 
+    head
+        title Productos 
     body 
         h1 Vista de Productos
         table
@@ -12,4 +13,7 @@ html
                 tr
                     th=val.title
                     th=val.price
-                    th=val.thumbnail
+                    th
+                        img(src=val.thumbnail width="80px")
+        button 
+            a(href="/") Volver al formulario

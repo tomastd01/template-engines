@@ -14,13 +14,18 @@
             <th>Precio</th>
             <th>Foto</th>
         </tr>
-        {{#each products}}
+        <% products.forEach(product => {%>
             <tr>
-                <td>{{this.title}}</td>
-                <td>{{this.price}}</td>
-                <td>{{this.thumbnail}}</td>
+                <td><%=product.title %></td>
+                <td><%=product.price %></td>
+                <td>
+                    <img src="<%=product.thumbnail %>" alt="" width="80px">
+                </td>
             </tr>
-        {{/each}}
+        <% });%> 
     </table>
+    <button>
+        <a href="/">Ir al formulario</a>
+    </button>
 </body>
 </html>
